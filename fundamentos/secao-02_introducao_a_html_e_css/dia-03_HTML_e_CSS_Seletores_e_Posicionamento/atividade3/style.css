@@ -1,0 +1,17 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+    background: red;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a:active {
+    font-family: sans-serif, Helvetica;
+    font-size: 20px;
+    color: blue;
+}

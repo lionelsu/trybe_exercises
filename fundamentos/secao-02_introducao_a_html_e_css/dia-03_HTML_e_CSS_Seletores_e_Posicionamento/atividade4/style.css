@@ -1,0 +1,53 @@
+div:hover {
+    border: 1px solid red;
+}
+
+.primaria {
+    background: red;
+}
+
+.primaria h3 {
+    color: yellow;
+}
+
+.secundaria {
+    background: blue;
+}
+
+.secundaria h3 {
+    color: gray;
+}
+
+.complementar {
+    background: green;
+}
+
+.complementar h3 {
+    color: blue;
+}
+
+.escura {
+    background: gray;
+}
+
+.escura h3 {
+    color: red;
+}
+
+.clara {
+    background: yellow;
+}
+
+.clara h3 {
+    color: green;
+}
+
+/* Faça a terceira div ser maior que as demais. */
+div:nth-of-type(3) {
+    height: 100px;
+}
+
+/* Deixe as tags ímpares <h3> com o texto em itálico. */
+div:nth-child(odd) h3 {
+    font-style: italic
+}

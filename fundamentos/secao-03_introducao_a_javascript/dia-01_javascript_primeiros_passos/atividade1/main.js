@@ -1,4 +1,4 @@
-const a = 50
+/*const a = 50
 const b = 40
 const c = 60
 
@@ -6,7 +6,7 @@ let adicao = a+b
 let subtracao = a-b
 let multiplicacao = a*b
 let divisao = a/b
-let modulo = a%b
+let modulo = a%b*/
 
 //Utilize if/else para escrever um código que retorne o maior de dois números. Defina, no começo do seu código, duas constantes com os valores que serão comparados.
 /*if(a > b) {
@@ -96,4 +96,18 @@ if(produto >= 0 && produtoVenda >= 0) {
     console.log(totalLucro)
 } else {
     console.log('O produto precisa ter um valor maior que zero.')
+}*/
+//descontos
+
+/*let aliquataINSS
+let IR
+let salarioB = 3000.00
+if(salarioB <= 1556.94) {
+    aliquataINSS = 0.08
+} else if(salarioB <= 2594.92) {
+    aliquataINSS = salarioB * 0.09
+} else if(salarioB <= 5189.82) {
+    aliquataINSS = salarioB * 0.11
+} else {
+    aliquataINSS = 570.88
 }*/

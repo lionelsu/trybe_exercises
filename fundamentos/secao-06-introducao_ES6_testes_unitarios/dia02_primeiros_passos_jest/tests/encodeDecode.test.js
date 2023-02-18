@@ -24,4 +24,8 @@ describe('Testando encode e decode', () => {
     it('decode converte outros números', () => {
         expect(decode('s2q5431')).toBe('sequoia')
     })
+
+    it('string passada tem o mesmo tamanho do retorno', () => {
+        expect(decode('sequoia').length).toEqual(7)
+    })
 })

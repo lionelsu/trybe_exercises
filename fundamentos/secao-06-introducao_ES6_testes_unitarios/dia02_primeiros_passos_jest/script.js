@@ -55,5 +55,25 @@ const decode = (string) => {
     return mapString(map, string)
 }
 
+// Exercício 4
+function techList(stacks, name) {
+    if (stacks.length === 0) {
+        return 'Vazio!'
+    }
+
+    const myStack = []
+    stacks.sort()
+    for (let i = 0; i < stacks.length; i += 1) {
+        myStack.push({
+            tech: stacks[i],
+            name: name
+        })
+    }
+
+    return myStack
+}
+
+
+
 // exportando
-module.exports = { myRemove, myFizzBuzz, encode, decode }
+module.exports = { myRemove, myFizzBuzz, encode, decode, techList }

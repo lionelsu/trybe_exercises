@@ -73,7 +73,18 @@ function techList(stacks, name) {
     return myStack
 }
 
+// Exercício 5
 
+function hydrate(drink) {
+    const total = drink
+        .split('')
+        .reduce((acumulador, atual) => acumulador + (parseInt(atual) || 0), 0)
+        /*|| 0 <- trata caso o caractere não for um número), 0 <-valor inicial da soma)*/
+
+    const copo = total === 1 ? 'copo' : 'copos'
+
+    return `${total} ${copo} de água`
+}
 
 // exportando
-module.exports = { myRemove, myFizzBuzz, encode, decode, techList }
+module.exports = { myRemove, myFizzBuzz, encode, decode, techList, hydrate }

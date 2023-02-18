@@ -52,7 +52,11 @@ customerInfo(order)
 
 const orderModifier = (order) => {
     // Adicione abaixo as informações necessárias.
-    const newOrder = { name: newName = 'Luiz Silva', payment: { total: newTotal = 50 }, ...order }
+    const newOrder = {
+        name: (newName = 'Luiz Silva'),
+        payment: { total: (newTotal = 50) },
+        ...order
+    }
 
     const {
         order: { pizza },
@@ -62,7 +66,7 @@ const orderModifier = (order) => {
             }
         }
     } = newOrder
-    
+
     const items = [...Object.keys(pizza), type].join(', ')
     const mensagem = `Olá ${newName}, o total do seu pedido de ${items} é R$ ${newTotal},00.`
 

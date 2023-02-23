@@ -110,3 +110,23 @@ function objectPair(obj, key, value) {
 }
 console.log(objectPair(lesson3, 'turno', 'noite'))
 console.log(objectPair(lesson3, 'materia', 'Maria Clara'))
+
+// Utilizando o objeto (allLesson), crie uma função para contar quantos estudantes assistiram às aulas de Matemática;
+
+// Utilizando o objeto (allLesson), crie uma função que deva retornar um objeto que represente o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes.
+function createReport(obj, prof) {
+    const reportArray = []
+    let totalStudent = 0
+    for(const [, valor] of Object.entries(obj)) {
+        if (valor['professor'] === prof) {
+            reportArray.push(valor['materia'])
+            totalStudent += valor['numeroEstudantes']
+        }
+    }
+    return {
+        professor: prof,
+        aulas: reportArray,
+        estudantes: totalStudent
+    }
+}
+console.log(createReport(allLessons(), 'Maria Clara'));
